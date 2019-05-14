@@ -155,11 +155,11 @@ function setLinks() {
 
 	stuff.forEach((item) => {
 		item.links.forEach((link) => {
-			let string = `${link.name} @ `
+			let string = ``
 			let element = document.createElement("p")
 			let hyperlink = document.createElement("a")
 			hyperlink.href = `${link.url}`
-			hyperlink.textContent = `${link.url}`
+			hyperlink.textContent = `${link.name}`
 			hyperlink.target = "_blank"
 			hyperlink.rel = "noopener noreferrer"
 			element.textContent = string
